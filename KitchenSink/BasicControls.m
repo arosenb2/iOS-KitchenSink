@@ -40,8 +40,21 @@
     simpleLabel.backgroundColor = [UIColor blueColor];
     simpleLabel.textColor = [[UIColor alloc] initWithRed:220 green:220 blue:220 alpha:255];
     
+    UILabel *complexLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, simpleLabel.frame.origin.y+simpleLabel.frame.size.height+10, self.view.frame.size.width-20, 30)];
+    complexLabel.text = @"Lorem ipsum bacon meat steak lots of good food here to eat. Never bake a steak unless you are Alton Brown and are an expert chef. This is just long to demonstrate multiple lines.";
+    complexLabel.shadowColor = [UIColor darkTextColor];
+    complexLabel.shadowOffset = CGSizeMake(0, 1);
+    
+    complexLabel.layer.borderColor = [UIColor darkGrayColor].CGColor;
+    complexLabel.layer.borderWidth = 1.0;
+    complexLabel.layer.cornerRadius = 8.0;
+    
+    [complexLabel setNumberOfLines:0];
+    [complexLabel sizeToFit];
+    
     [self.view addSubview:sampleButton];
     [self.view addSubview:simpleLabel];
+    [self.view addSubview:complexLabel];
 }
 
 - (void)didReceiveMemoryWarning

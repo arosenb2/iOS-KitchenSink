@@ -16,6 +16,10 @@
 		5A5AC5D316CB533A00A36E02 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A5AC5D216CB533A00A36E02 /* Default.png */; };
 		5A5AC5D516CB533A00A36E02 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A5AC5D416CB533A00A36E02 /* Default@2x.png */; };
 		5A5AC5D716CB533A00A36E02 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A5AC5D616CB533A00A36E02 /* Default-568h@2x.png */; };
+		5A5AC5DF16CB53CA00A36E02 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5AC5DE16CB53CA00A36E02 /* MainViewController.m */; };
+		5A5AC5E216CBD82A00A36E02 /* ChildBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5AC5E116CBD82A00A36E02 /* ChildBrowser.m */; };
+		5A5AC5E516CD7BD600A36E02 /* BasicControls.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5AC5E416CD7BD600A36E02 /* BasicControls.m */; };
+		5A91D93F16CEEAB800220417 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A91D93E16CEEAB800220417 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,13 @@
 		5A5AC5D216CB533A00A36E02 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		5A5AC5D416CB533A00A36E02 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		5A5AC5D616CB533A00A36E02 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		5A5AC5DD16CB53CA00A36E02 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		5A5AC5DE16CB53CA00A36E02 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		5A5AC5E016CBD82900A36E02 /* ChildBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildBrowser.h; sourceTree = "<group>"; };
+		5A5AC5E116CBD82A00A36E02 /* ChildBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildBrowser.m; sourceTree = "<group>"; };
+		5A5AC5E316CD7BD600A36E02 /* BasicControls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicControls.h; sourceTree = "<group>"; };
+		5A5AC5E416CD7BD600A36E02 /* BasicControls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicControls.m; sourceTree = "<group>"; };
+		5A91D93E16CEEAB800220417 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +53,7 @@
 				5A5AC5C116CB533A00A36E02 /* UIKit.framework in Frameworks */,
 				5A5AC5C316CB533A00A36E02 /* Foundation.framework in Frameworks */,
 				5A5AC5C516CB533A00A36E02 /* CoreGraphics.framework in Frameworks */,
+				5A91D93F16CEEAB800220417 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +63,7 @@
 		5A5AC5B416CB533A00A36E02 = {
 			isa = PBXGroup;
 			children = (
+				5A91D93E16CEEAB800220417 /* QuartzCore.framework */,
 				5A5AC5C616CB533A00A36E02 /* KitchenSink */,
 				5A5AC5BF16CB533A00A36E02 /* Frameworks */,
 				5A5AC5BE16CB533A00A36E02 /* Products */,
@@ -81,6 +94,12 @@
 				5A5AC5CF16CB533A00A36E02 /* AppDelegate.h */,
 				5A5AC5D016CB533A00A36E02 /* AppDelegate.m */,
 				5A5AC5C716CB533A00A36E02 /* Supporting Files */,
+				5A5AC5DD16CB53CA00A36E02 /* MainViewController.h */,
+				5A5AC5DE16CB53CA00A36E02 /* MainViewController.m */,
+				5A5AC5E016CBD82900A36E02 /* ChildBrowser.h */,
+				5A5AC5E116CBD82A00A36E02 /* ChildBrowser.m */,
+				5A5AC5E316CD7BD600A36E02 /* BasicControls.h */,
+				5A5AC5E416CD7BD600A36E02 /* BasicControls.m */,
 			);
 			path = KitchenSink;
 			sourceTree = "<group>";
@@ -166,6 +185,9 @@
 			files = (
 				5A5AC5CD16CB533A00A36E02 /* main.m in Sources */,
 				5A5AC5D116CB533A00A36E02 /* AppDelegate.m in Sources */,
+				5A5AC5DF16CB53CA00A36E02 /* MainViewController.m in Sources */,
+				5A5AC5E216CBD82A00A36E02 /* ChildBrowser.m in Sources */,
+				5A5AC5E516CD7BD600A36E02 /* BasicControls.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +267,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KitchenSink/KitchenSink-Prefix.pch";
 				INFOPLIST_FILE = "KitchenSink/KitchenSink-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -256,6 +279,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KitchenSink/KitchenSink-Prefix.pch";
 				INFOPLIST_FILE = "KitchenSink/KitchenSink-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -280,6 +304,7 @@
 				5A5AC5DC16CB533A00A36E02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

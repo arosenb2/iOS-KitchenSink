@@ -20,6 +20,8 @@
 		5A5AC5E216CBD82A00A36E02 /* ChildBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5AC5E116CBD82A00A36E02 /* ChildBrowser.m */; };
 		5A5AC5E516CD7BD600A36E02 /* BasicControls.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5AC5E416CD7BD600A36E02 /* BasicControls.m */; };
 		5A91D93F16CEEAB800220417 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A91D93E16CEEAB800220417 /* QuartzCore.framework */; };
+		5A91D94216D06ED000220417 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A91D94116D06ED000220417 /* WebViewController.m */; };
+		5A91D94916D07C2500220417 /* web in Resources */ = {isa = PBXBuildFile; fileRef = 5A91D94816D07C2500220417 /* web */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,9 @@
 		5A5AC5E316CD7BD600A36E02 /* BasicControls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicControls.h; sourceTree = "<group>"; };
 		5A5AC5E416CD7BD600A36E02 /* BasicControls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicControls.m; sourceTree = "<group>"; };
 		5A91D93E16CEEAB800220417 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5A91D94016D06ED000220417 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		5A91D94116D06ED000220417 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		5A91D94816D07C2500220417 /* web */ = {isa = PBXFileReference; lastKnownFileType = folder; path = web; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +68,6 @@
 		5A5AC5B416CB533A00A36E02 = {
 			isa = PBXGroup;
 			children = (
-				5A91D93E16CEEAB800220417 /* QuartzCore.framework */,
 				5A5AC5C616CB533A00A36E02 /* KitchenSink */,
 				5A5AC5BF16CB533A00A36E02 /* Frameworks */,
 				5A5AC5BE16CB533A00A36E02 /* Products */,
@@ -81,6 +85,7 @@
 		5A5AC5BF16CB533A00A36E02 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5A91D93E16CEEAB800220417 /* QuartzCore.framework */,
 				5A5AC5C016CB533A00A36E02 /* UIKit.framework */,
 				5A5AC5C216CB533A00A36E02 /* Foundation.framework */,
 				5A5AC5C416CB533A00A36E02 /* CoreGraphics.framework */,
@@ -91,6 +96,7 @@
 		5A5AC5C616CB533A00A36E02 /* KitchenSink */ = {
 			isa = PBXGroup;
 			children = (
+				5A91D94816D07C2500220417 /* web */,
 				5A5AC5CF16CB533A00A36E02 /* AppDelegate.h */,
 				5A5AC5D016CB533A00A36E02 /* AppDelegate.m */,
 				5A5AC5C716CB533A00A36E02 /* Supporting Files */,
@@ -100,6 +106,8 @@
 				5A5AC5E116CBD82A00A36E02 /* ChildBrowser.m */,
 				5A5AC5E316CD7BD600A36E02 /* BasicControls.h */,
 				5A5AC5E416CD7BD600A36E02 /* BasicControls.m */,
+				5A91D94016D06ED000220417 /* WebViewController.h */,
+				5A91D94116D06ED000220417 /* WebViewController.m */,
 			);
 			path = KitchenSink;
 			sourceTree = "<group>";
@@ -173,6 +181,7 @@
 				5A5AC5D316CB533A00A36E02 /* Default.png in Resources */,
 				5A5AC5D516CB533A00A36E02 /* Default@2x.png in Resources */,
 				5A5AC5D716CB533A00A36E02 /* Default-568h@2x.png in Resources */,
+				5A91D94916D07C2500220417 /* web in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +197,7 @@
 				5A5AC5DF16CB53CA00A36E02 /* MainViewController.m in Sources */,
 				5A5AC5E216CBD82A00A36E02 /* ChildBrowser.m in Sources */,
 				5A5AC5E516CD7BD600A36E02 /* BasicControls.m in Sources */,
+				5A91D94216D06ED000220417 /* WebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

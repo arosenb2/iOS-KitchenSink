@@ -9,6 +9,7 @@
 #import "MainViewController.h"
 #import "ChildBrowser.h"
 #import "BasicControls.h"
+#import "WebViewController.h"
 
 @interface MainViewController ()
 
@@ -37,13 +38,14 @@
     self.tbl.delegate = self;
     self.tbl.dataSource = self;
     
-    self.items = [[NSArray alloc] initWithObjects:
-                  @"AlertView Example",
-                  @"ChildBrowser Example",
-                  @"Basic Controls Example",
-                  @"Local Web Server Example",
-                  @"MapKit Example",
-                  nil];
+    self.items = @[
+                      @"AlertView Example",
+                      @"ChildBrowser Example",
+                      @"Basic Controls Example",
+                      @"Local Web Server Example",
+                      @"MapKit Example",
+                      @"Treading Example"
+                  ];
     
     [self.view setBackgroundColor:[UIColor scrollViewTexturedBackgroundColor]];
     [self.view addSubview:self.tbl];
@@ -105,18 +107,41 @@
         case 2: //Basic Controls
         {
             BasicControls *bc = [[BasicControls alloc] init];
+            
             [[self navigationController] pushViewController:bc animated:TRUE];
         }
             break;
         case 3: //Local Web Server
         {
+            NSString *localURL = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html" inDirectory:@"web"];
+            WebViewController *web = [[WebViewController alloc] initWithURL:[NSURL fileURLWithPath:localURL]];
             
+            [[self navigationController] pushViewController:web animated:TRUE];
         }
             break;
             
         case 4: //MapKit
         {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Not Yet Available" message:@"" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
             
+            [alert show];
+        }
+        case 5: //Threading
+        {
+            [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:TRUE];
+            
+            dispatch_queue_t queue = dispatch_queue_create("com.cgifederal.KitchenSink", NULL);
+            dispatch_async(queue, ^{
+                sleep(2);
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    
+                    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:FALSE];
+                    
+                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Threading Complete" message:@"" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+                    
+                    [alert show];
+                });
+            });
         }
         default: //Should never use this
         {

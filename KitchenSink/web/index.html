@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <title>Local Content</title>
+</head>
+<body>
+    <h2>This content is from a local HTML file and not the internet.</h2>
+    <hr>
+    <a href="javascript:invokeBridge();">Invoke the JS Bridge</a>
+    
+<script type="text/javascript">
+    function invokeBridge(){
+        window.location = "bridge://alert";
+    }
+</script>
+</body>
+</html>

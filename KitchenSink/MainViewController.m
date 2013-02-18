@@ -10,6 +10,7 @@
 #import "ChildBrowser.h"
 #import "BasicControls.h"
 #import "WebViewController.h"
+#import "JSONExample.h"
 
 @interface MainViewController ()
 
@@ -44,7 +45,8 @@
                       @"Basic Controls Example",
                       @"Local Web Server Example",
                       @"MapKit Example",
-                      @"Treading Example"
+                      @"Treading Example",
+                      @"JSON Example"
                   ];
     
     [self.view setBackgroundColor:[UIColor scrollViewTexturedBackgroundColor]];
@@ -88,7 +90,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [tableView deselectRowAtIndexPath:indexPath animated:TRUE];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     switch(indexPath.row){
         case 0: //AlertView
@@ -108,7 +110,7 @@
         {
             BasicControls *bc = [[BasicControls alloc] init];
             
-            [[self navigationController] pushViewController:bc animated:TRUE];
+            [[self navigationController] pushViewController:bc animated:YES];
         }
             break;
         case 3: //Local Web Server
@@ -116,7 +118,7 @@
             NSString *localURL = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html" inDirectory:@"web"];
             WebViewController *web = [[WebViewController alloc] initWithURL:[NSURL fileURLWithPath:localURL]];
             
-            [[self navigationController] pushViewController:web animated:TRUE];
+            [[self navigationController] pushViewController:web animated:YES];
         }
             break;
             
@@ -128,20 +130,25 @@
         }
         case 5: //Threading
         {
-            [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:TRUE];
+            [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
             
             dispatch_queue_t queue = dispatch_queue_create("com.cgifederal.KitchenSink", NULL);
             dispatch_async(queue, ^{
                 sleep(2);
                 dispatch_async(dispatch_get_main_queue(), ^{
                     
-                    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:FALSE];
+                    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
                     
                     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Threading Complete" message:@"" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
                     
                     [alert show];
                 });
             });
+        }
+        case 6: //JSONExample
+        {
+            JSONExample *json = [[JSONExample alloc] init];
+            [[self navigationController] pushViewController:json animated:YES];
         }
         default: //Should never use this
         {

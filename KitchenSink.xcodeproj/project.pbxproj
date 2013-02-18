@@ -22,6 +22,7 @@
 		5A91D93F16CEEAB800220417 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A91D93E16CEEAB800220417 /* QuartzCore.framework */; };
 		5A91D94216D06ED000220417 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A91D94116D06ED000220417 /* WebViewController.m */; };
 		5A91D94916D07C2500220417 /* web in Resources */ = {isa = PBXBuildFile; fileRef = 5A91D94816D07C2500220417 /* web */; };
+		5A91D94C16D1C67A00220417 /* JSONExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A91D94B16D1C67A00220417 /* JSONExample.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,8 @@
 		5A91D94016D06ED000220417 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		5A91D94116D06ED000220417 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		5A91D94816D07C2500220417 /* web */ = {isa = PBXFileReference; lastKnownFileType = folder; path = web; sourceTree = "<group>"; };
+		5A91D94A16D1C67A00220417 /* JSONExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONExample.h; sourceTree = "<group>"; };
+		5A91D94B16D1C67A00220417 /* JSONExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONExample.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,8 @@
 				5A5AC5E416CD7BD600A36E02 /* BasicControls.m */,
 				5A91D94016D06ED000220417 /* WebViewController.h */,
 				5A91D94116D06ED000220417 /* WebViewController.m */,
+				5A91D94A16D1C67A00220417 /* JSONExample.h */,
+				5A91D94B16D1C67A00220417 /* JSONExample.m */,
 			);
 			path = KitchenSink;
 			sourceTree = "<group>";
@@ -198,6 +203,7 @@
 				5A5AC5E216CBD82A00A36E02 /* ChildBrowser.m in Sources */,
 				5A5AC5E516CD7BD600A36E02 /* BasicControls.m in Sources */,
 				5A91D94216D06ED000220417 /* WebViewController.m in Sources */,
+				5A91D94C16D1C67A00220417 /* JSONExample.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

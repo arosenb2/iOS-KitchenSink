@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ChildBrowser : UIViewController
+@interface ChildBrowser : UIViewController <UIWebViewDelegate>
 
 - (id)initWithURL:(NSURL *)defaultURL;
 

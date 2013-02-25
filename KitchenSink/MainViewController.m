@@ -128,6 +128,7 @@
             
             [alert show];
         }
+            break;
         case 5: //Threading
         {
             [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
@@ -145,11 +146,13 @@
                 });
             });
         }
+            break;
         case 6: //JSONExample
         {
             JSONExample *json = [[JSONExample alloc] init];
             [[self navigationController] pushViewController:json animated:YES];
         }
+            break;
         default: //Should never use this
         {
         

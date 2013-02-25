@@ -45,7 +45,7 @@
                       @"Basic Controls Example",
                       @"Local Web Server Example",
                       @"MapKit Example",
-                      @"Treading Example",
+                      @"Threading Example",
                       @"JSON Example"
                   ];
     

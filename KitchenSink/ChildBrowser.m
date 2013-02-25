@@ -68,7 +68,11 @@
 #pragma UIWebViewDelegate Methods
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
-    if([[UIApplication sharedApplication] canOpenURL:request.URL])
+    if([request.URL.absoluteString hasPrefix:@"http"])
+    {
+        return YES;
+    }
+    else if([[UIApplication sharedApplication] canOpenURL:request.URL])
     {
         [[UIApplication sharedApplication] openURL:request.URL];
         return NO;

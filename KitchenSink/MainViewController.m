@@ -95,14 +95,18 @@
     switch(indexPath.row){
         case 0: //AlertView
         {
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"UIAlertView" message:@"This is a sample of the UIAlertView." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"UIAlertView"
+                                                            message:@"This is a sample of the UIAlertView."
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil, nil];
             
             [alert show];
         }
             break;
         case 1: //ChildBrowser
         {
-            ChildBrowser *cb = [[ChildBrowser alloc] initWithURL:[[NSURL alloc] initWithString:@"http://m.cgi.com"]];
+            ChildBrowser *cb = [[ChildBrowser alloc] initWithURL:[NSURL URLWithString:@"http://m.cgi.com"]];
             [self presentViewController:cb animated:TRUE completion:nil];
         }
             break;

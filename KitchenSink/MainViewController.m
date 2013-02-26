@@ -119,7 +119,10 @@
             break;
         case 3: //Local Web Server
         {
-            NSString *localURL = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html" inDirectory:@"web"];
+            NSString *localURL = [[NSBundle mainBundle] pathForResource:@"index"
+                                                                 ofType:@"html"
+                                                            inDirectory:@"web"];
+            
             WebViewController *web = [[WebViewController alloc] initWithURL:[NSURL fileURLWithPath:localURL]];
             
             [[self navigationController] pushViewController:web animated:YES];
@@ -128,7 +131,11 @@
             
         case 4: //MapKit
         {
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Not Yet Available" message:@"" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Not Yet Available"
+                                                            message:@""
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil, nil];
             
             [alert show];
         }
@@ -144,7 +151,11 @@
                     
                     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
                     
-                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Threading Complete" message:@"" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Threading Complete"
+                                                                    message:@""
+                                                                   delegate:nil
+                                                          cancelButtonTitle:@"OK"
+                                                          otherButtonTitles:nil, nil];
                     
                     [alert show];
                 });

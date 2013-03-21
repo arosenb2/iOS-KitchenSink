@@ -23,6 +23,8 @@
 		5A91D94216D06ED000220417 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A91D94116D06ED000220417 /* WebViewController.m */; };
 		5A91D94916D07C2500220417 /* web in Resources */ = {isa = PBXBuildFile; fileRef = 5A91D94816D07C2500220417 /* web */; };
 		5A91D94C16D1C67A00220417 /* JSONExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A91D94B16D1C67A00220417 /* JSONExample.m */; };
+		5A91D9C716DC700700220417 /* IBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A91D9C516DC700700220417 /* IBViewController.m */; };
+		5A91D9C816DC700700220417 /* IBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A91D9C616DC700700220417 /* IBViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,9 @@
 		5A91D98016DBE0BF00220417 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		5A91D98116DBE0BF00220417 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		5A91D98216DBE0BF00220417 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5A91D9C416DC700700220417 /* IBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBViewController.h; sourceTree = "<group>"; };
+		5A91D9C516DC700700220417 /* IBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBViewController.m; sourceTree = "<group>"; };
+		5A91D9C616DC700700220417 /* IBViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IBViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +140,9 @@
 				5A91D94116D06ED000220417 /* WebViewController.m */,
 				5A91D94A16D1C67A00220417 /* JSONExample.h */,
 				5A91D94B16D1C67A00220417 /* JSONExample.m */,
+				5A91D9C416DC700700220417 /* IBViewController.h */,
+				5A91D9C516DC700700220417 /* IBViewController.m */,
+				5A91D9C616DC700700220417 /* IBViewController.xib */,
 			);
 			path = KitchenSink;
 			sourceTree = "<group>";
@@ -209,6 +217,7 @@
 				5A5AC5D516CB533A00A36E02 /* Default@2x.png in Resources */,
 				5A5AC5D716CB533A00A36E02 /* Default-568h@2x.png in Resources */,
 				5A91D94916D07C2500220417 /* web in Resources */,
+				5A91D9C816DC700700220417 /* IBViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +235,7 @@
 				5A5AC5E516CD7BD600A36E02 /* BasicControls.m in Sources */,
 				5A91D94216D06ED000220417 /* WebViewController.m in Sources */,
 				5A91D94C16D1C67A00220417 /* JSONExample.m in Sources */,
+				5A91D9C716DC700700220417 /* IBViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

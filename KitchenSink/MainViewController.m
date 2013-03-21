@@ -11,6 +11,7 @@
 #import "BasicControls.h"
 #import "WebViewController.h"
 #import "JSONExample.h"
+#import "IBViewController.h"
 
 @interface MainViewController ()
 
@@ -46,7 +47,8 @@
                       @"Local Web Server Example",
                       @"MapKit Example",
                       @"Threading Example",
-                      @"JSON Example"
+                      @"JSON Example",
+                      @"Interface Builder"
                   ];
     
     [self.view setBackgroundColor:[UIColor scrollViewTexturedBackgroundColor]];
@@ -166,6 +168,14 @@
         {
             JSONExample *json = [[JSONExample alloc] init];
             [[self navigationController] pushViewController:json animated:YES];
+        }
+            break;
+            
+        case 7: //Interface Builder
+        {
+            IBViewController *ib = [[IBViewController alloc] initWithNibName:@"IBViewController" bundle:nil];
+            
+            [[self navigationController] pushViewController:ib animated:YES];
         }
             break;
         default: //Should never use this
